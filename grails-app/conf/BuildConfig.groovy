@@ -50,6 +50,8 @@ grails.project.dependency.resolution = {
         test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
         compile('com.bertramlabs.plugins:karman-core:0.10.2')
         compile('com.bertramlabs.plugins:karman-aws:0.10.2')
+        compile 'org.apache.httpcomponents:httpcore:4.2'
+        compile 'org.apache.httpcomponents:httpclient:4.2'
     }
 
     plugins {

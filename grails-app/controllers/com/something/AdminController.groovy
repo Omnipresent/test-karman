@@ -7,9 +7,9 @@ import com.bertramlabs.plugins.karman.CloudFile
 class AdminController {
 
 	def settings() {
-		def sp = StorageProvider.create(provider: 's3', accessKey: "AKIAJ36MGCGW4TCE6D6Q", secretKey: "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")
+		def sp = StorageProvider.create(provider: 's3', accessKey: "key", secretKey: "secret/5xSLW6g3z8l5ypwPrd")
         def filelist = []
-        sp["aerstone-sift-test"].listFiles(prefix:'path/prefix').each { CloudFile file ->
+        sp["bucket"].listFiles(prefix:'path/prefix').each { CloudFile file ->
           InputStream is
           try {
             String name = file.name
